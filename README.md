@@ -19,6 +19,7 @@ A fast and efficient Discord token checker that validates tokens, detects flagge
 1. Clone the repository
 
 git clone https://github.com/long191910/discord-token-checker.git
+
 cd discord-token-checker
 
 
