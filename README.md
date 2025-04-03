@@ -98,5 +98,3 @@ This script is for educational purposes only. Misuse may result in account suspe
 
 
 ---
-# JOIN MY DISCORD SERVER
-# https://discord.gg/antigore
