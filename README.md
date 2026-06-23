@@ -68,30 +68,6 @@ Done! Saved all results to `valid.txt` and `flagged.txt`.
 
 ---
 
-How It Works
-
-Reads tokens from tokens.txt
-
-Uses multi-threading to check multiple tokens simultaneously
-
-Queries Discord API to determine token status
-
-Saves valid and flagged tokens separately
-
-
-
----
-
-Notes
-
-Avoid checking too many tokens too fast to prevent rate limits.
-
-This script is for educational purposes only. Misuse may result in account suspension.
-
-
-
----
-
 License
 
 MIT License – Free to use and modify.
