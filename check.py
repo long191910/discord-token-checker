@@ -17,7 +17,7 @@ def check_token(token):
     response = requests.get(url, headers=get_headers(token))
 
     if response.status_code == 200:
-        print(f"✅ Valid token: {token[:20]}...")
+        print(f"Valid token: {token[:20]}...")
         with open(VALID_TOKENS_FILE, "a") as f:
             f.write(token + "\n")
     elif response.status_code == 403:
@@ -25,13 +25,13 @@ def check_token(token):
         with open(FLAGGED_TOKENS_FILE, "a") as f:
             f.write(token + "\n")
     else:
-        print(f"❌ Invalid token: {token[:20]}...")
+        print(f"Invalid token: {token[:20]}...")
 
 def check_tokens():
     with open(TOKEN_FILE, "r") as f:
         tokens = [line.strip() for line in f.readlines()]
 
-    print(f"🔍 Checking {len(tokens)} token...")
+    print(f"Checking {len(tokens)} token...")
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         executor.map(check_token, tokens)
